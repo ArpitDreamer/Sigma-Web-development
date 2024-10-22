@@ -1,0 +1,22 @@
+a{
+    background-color: rgb(142, 142, 179);
+}
+p{
+    background-color: aqua;
+}
+
+span{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+/* in css remember ".anyname" is used for class whereas "#anyname" is used for id see examples down  */
+
+.Name{
+    background-color: rgb(255, 127, 208);
+}
+.sname{
+    color: rgb(219, 255, 12);
+}
+#arnav{
+    color: rgb(10, 227, 86);
+}

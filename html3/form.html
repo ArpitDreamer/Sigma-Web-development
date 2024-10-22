@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Learn basic of form</title>
+</head>
+<body>
+    <div>
+        <!-- it is now necessary to fill that box in which required is written -->
+        <input type="text" required pattern="A-Z,1-9">
+    </div>
+    <div>
+        <form action="/submit">
+            <!-- here in label and input always for and id is sarme -->
+             <!-- the use of label is that it help us to wrrite that what content we want from user side -->
+            <label for="Name"> Enter Your Name  </label>
+            <!-- in input we get a box to take input from user -->
+            <input type="text" name="Student name" id="Name" placeholder="Enter your Name" >
+        </form>
+    </div>
+
+    <div>
+        <form>
+            <input type="radio" name="gender" id="male" value="male">
+            <labe for="male">Male</labe>
+
+            <input type="radio" name="gender" id="female" value="female" autofocus>
+            <label for="female">Female</label>
+        </form>
+    </div>
+
+    <div>
+        <form>
+            <input type="checkbox" name="verifying term and condition" id="verify" value="yes">
+            <label for="verify">You Accept all the term and condition</label>
+        </form>
+    </div>
+
+    <div>
+        <form>
+            <label for="comment">Enter your comment : </label><br>
+            <textarea name="comment" id="comment" rows="4" cols="50"> Enter your comment : </textarea>
+        </form>
+    </div>
+
+    <div>
+        <select name="Fav Fruits">
+            <option value="Apple">Apple</option>
+            <option value="Banana">Banana</option>
+            <option value="Mango">Mango</option>
+        </select>
+    </div>
+</body>
+</html>

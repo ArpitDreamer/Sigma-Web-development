@@ -1,0 +1,6 @@
+ <svg xmlns="http://www.w3.org/2000/svg" height="49" width="49">
+        <circle cx="25" cy="25" r="20" stroke="black" stroke-width="3" fill="yellow" />
+    </svg>
+
+<!-- here xmlns="http://www.w3.org/2000/svg" it is imp so that svg image can be imported on browser if we not write this part than corcle will be not shown -->
+<!-- xmlns="http://www.w3.org/2000/svg" it is known as namespace declaration -->

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Box all margins</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    .box1{
+        margin: 10px;
+        /* In HTML/CSS, padding is the space between an element's content and its border. It adds internal spacing within the element, pushing the content inward. */
+        paddindg: 100px;
+        background-color: lightblue;
+        /* it is important to write px after number to making execute of the border and height */
+        border: 5px solid black;
+        height: 300px;
+        box-sizing: border-box;
+        /* if we not give box-sizing: border-box; than height will be 300px sum of padding border */
+
+    }
+
+    /* the space between two box is that whose margin is greater like in this case margin 20 p */
+
+    .box2{
+        margin: 20px;
+        /* In HTML/CSS, padding is the space between an element's content and its border. It adds internal spacing within the element, pushing the content inward. */
+        paddindg: 100px;
+        background-color: rgb(98, 177, 109);
+        border: 5px solid rgb(194, 59, 59);
+        height: 300px;
+        /* if we not give box-sizing: border-box; than height will be 300px of only content */
+        }
+</style>
+<body>
+    <div class="box1 box">
+        <p>hey! I am Box 1</p>
+    </div>
+
+    <div class="box2 box">hey! I am Box 2</div>
+</body>
+</html>

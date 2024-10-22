@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors use in css</title>
+</head>
+<body>
+    <style type="text/css">
+        /* here . is used for using specific class */
+        /* class selector */
+
+                
+        .red{
+            background-color: aquamarine;
+            /* here in margin 34px auto it means that 34 px is the distance between two line and auto means aligning the para from left and right to center */
+            margin: 34px auto;
+        }
+
+        /* id selector */
+        #blue{
+            background-color: blue;
+        }
+
+
+        /* used for all the file means it is applicale on the whole page */
+        /* universal selector */
+        *{
+            margin: 1%;
+            /* padding is used to create space b/w an elements content and its border,enhancing layout and readability */
+            padding: 1%;
+        }
+
+        /* here if p is inside div than this style will be applied on that it is compulsory that p should be inside the div and not at in any other tag*/
+        /* child selector */
+        div > p {
+            color: red;
+            background-color: rgb(97, 45, 45)
+        }
+
+        /* here if p is inside div than this style will be applied on that it is not compulsory that p should be inside the div it can be inside another tag than also this style will be used*/
+        /* Descendant Selector  */
+        /* try to use it by commnting bellow div */
+        div p{
+            color: blue;
+            background-color: rgb(201, 191, 175);
+        }
+
+        /* Pseudo selector */
+        /* if the link is visited than this style will be shown */
+        a:visited{
+            color: blueviolet;
+            background-color: aqua;
+        }
+
+        /* if the link is not opend than this style will be shown */
+        a:link{
+            color: blue;
+                    }
+
+        /* if the mouse is on the link than this will be shown  */
+        a:hover{
+            background-color: rgb(238, 94, 185);
+        }
+
+        /* when we click on the link than this style will be shown */
+        a:active{
+            background-color: brown;
+        }
+
+
+        /* here in p where first para is written there this style wwill be shown */
+        p:first-child{
+            background-color: black;
+        }
+
+        /* !important menas that,those style by css is most important and it is to apply irresective or priority order */
+        /* priorit order is : !important>inline selector>id>class or attribute>elemet selector>Universal selector  */
+        [data-c="a"]{
+            background-color: blueviolet !important;
+            background-color: brown;
+        }
+
+        .container p{
+            background-color: rgb(209, 4, 158);
+        }
+
+    </style>
+    <div class="a red" >I am intelligent    Boy</div>
+    <div class="red">I am healthy</div>
+
+    <div id="blue"> I am havig blue id</div>
+
+    <div id="3">
+        <p>This is a paragraph</p>
+        <p>This is another paragraph</p>
+    </div>
+
+    <div id="4">
+        <article>
+            <p>This is a paragraph</p>
+            <p>This is another paragraph</p>
+        </article>
+    </div>
+
+
+    <div>
+        <a href="https://github.com/">Git Hub</a>
+        <a href="https://facebook.com/">FaceBook</a>
+        <a href="https://instagram.com/">Instagram</a>
+    </div>
+    <div data-c="a">
+        <h1>here we know about attribute selector</h1>
+    </div>
+
+    <!-- how to calculate specificity of a selector , specificity of a selector is determined to know which selector is to priortise show that, there style will be implemented not other -->
+     <div>
+        <ol>
+            <li>universal seletor -:  0</select></li>
+            <li>element selector or pseudo selector -: 1</li>
+            <li>class or attribute selector -: 10</li>
+            <li>id selector -: 100</li>
+            <li>inline selector -: 1000</li>
+        </ol>
+     </div>
+
+     <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At est modi repellendus omnis.</p>
+     </div>
+
+</body>
+
+
+<div>
+    <ol>
+        <li>px </li>
+
+    </ol>
+</div>
+</html>
