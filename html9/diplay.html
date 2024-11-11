@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        .box{
+            border: 2px solid black;
+             display: inline;        /*convert block element to inline element*/
+             margin: 45px;
+             padding: 31px;
+        }
+
+        .box1{
+            border: 2px solid blue;
+             display: inline-block;  /*if i write inline block than only we get margin and padding from upside try it byremovingblock in this line*/
+             margin: 45px;
+             padding: 31px;
+             display: none;     /*if i write this than that box will be removed*/
+             visibility: hidden;        /*it will remove box but space of the box is not removed*/
+        }
+    </style>
+</head>
+<body>
+    <!-- how to change the display propertyy like make an block element to inline element -->
+     <div class="box">
+        i am a good boox
+     </div>
+     <div class="box">
+        i also look beautiful
+     </div>
+
+     <div class="box1">
+        i am a good boox
+     </div>
+     <div class="box1">
+        i also look beautiful
+     </div>
+</body>
+</html>
