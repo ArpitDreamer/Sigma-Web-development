@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box {
+            height: 40vh;
+            width: 10vw;
+            border: 3px solid blue;
+            overflow: auto;
+            overflow-x: auto;
+            /*overflow auto means that in x axis we git scroll bar*/
+            overflow-y: hidden;
+            /*if content get overflow than it will get automatic hiden in y axis*/
+
+            /* it is similar to coordinate to x and y axis in above. it work like that similar */
+            overflow: auto hidden;
+
+            
+            white-space: nowrap;        /*in y axis nothing will be written only in one line on y axis all thing will be written*/
+            text-overflow: ellipsis;  /* text oveflow ellipse means that in x axis the text overflow will be written as ... */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam illum dolores nostrum ex incidunt quia totam
+        fuga voluptas velit, facilis corporis et, saepe molestiae impedit delectus, ipsum libero officia quod autem
+        fugit ullam quos vitae! Distinctio commodi quis neque fugit quos sunt eum facere repellendus. Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit. Eum delectus, hic totam reiciendis laborum error doloremque ipsa rem
+        dignissimos pariatur velit provident ut recusandae reprehenderit quos libero autem quae sunt odit deleniti.
+        Reiciendis odio veniam, obcaecati voluptatibus numquam quas amet velit quia quo totam laudantium! Modi minima
+        dignissimos reiciendis. Temporibus pariatur dolores mollitia consequatur sed unde quas saepe optio velit
+        corporis libero quod fuga voluptatibus, fugiat repellendus sunt tempore maxime totam dolorem ullam. Repudiandae
+        nesciunt illo ipsa architecto ratione voluptas autem molestias suscipit numquam. Maxime, reprehenderit
+        repellendus incidunt fuga et sit at cupiditate quidem pariatur aliquam quis consectetur excepturi recusandae!
+    </div>
+</body>
+
+</html>
